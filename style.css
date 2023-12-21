@@ -701,9 +701,20 @@ input:required {
 
 /* :: 7.0 Header CSS */
 
+/* Common styles for both mobile and desktop */
+
 .home-logo {
   color: #eaeaea;
+  z-index: 100;
 }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .home-logo {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+}
+
 
 .header-area {
   position: fixed;
